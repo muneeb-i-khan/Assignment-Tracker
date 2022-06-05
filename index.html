@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="top">
+        <span class="top--name">Assignment Tracker</span>
+        <button id="add-assignment">Add Task</button>
+    </div>
+    <div id="backdrop"></div>
+    <div class="modal" id="add-modal">
+        <div class="modal__content">
+            <label for="assgn-name">Assignment Name</label>
+            <input type="text" name="Assignment Name" id="assgignment-name" />
+            <label for="Subject">Subject Name</label>
+            <input type="text" name="Subject" id="subject" />
+            <label for="due-date">Due Date</label>
+            <input type="date" name="Due-Date" id="due-date">
+
+        </div>
+        <div class="modal__actions">
+            <button class="btn btn--passive" id="cancel-btn">Cancel</button>
+            <button class="btn btn--success" id="add-btn">Add</button>
+        </div>
+    </div>
+
+ 
+  
+      <main>
+        <!-- <section id="entry-text" class="card">
+          <p>Your assignments</p>
+        </section> -->
+        <ul id="assignment-list">
+            <li class="assignment-element-top">
+                <div class="assignment-element-name">
+                    <p>Name</p>
+                </div>
+                <div class="assignment-element-subject">
+                    <p>Subject</p>
+                </div>
+                <div class="assignment-element-date">
+                    <p>Deadline</p>
+                </div>
+                <div class="assignment-element-status">
+                    <p>Status</p>
+                </div>
+            </li>
+           
+        </ul> 
+      </main>
+</body>
+
+</html>
